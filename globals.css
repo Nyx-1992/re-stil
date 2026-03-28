@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
 :root {
   --beige: #f5f5dc;
+  --beige-dark: #e9e5c7;
   --olive: #708238;
+  --olive-dark: #55612b;
   --terracotta: #e2725b;
+  --cream: #fff9f3;
+  --coffee: #b08968;
+  --plant: #a3b18a;
+  --shadow: 0 2px 8px rgba(112, 130, 56, 0.08);
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: var(--beige);
-  color: var(--olive);
+  font-family: 'Quicksand', 'Inter', Arial, sans-serif;
+  background: var(--cream);
+  color: var(--olive-dark);
+  min-height: 100vh;
 }
 
 a {
   color: var(--olive);
   text-decoration: none;
   transition: color 0.2s;
+  font-weight: 600;
 }
 
 a:hover {
@@ -22,11 +32,79 @@ a:hover {
 }
 
 header, footer {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Quicksand', 'Inter', Arial, sans-serif;
 }
 
 main {
   padding: 2rem 1rem;
   max-width: 900px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: var(--beige);
+  box-shadow: var(--shadow);
+}
+
+button, .button {
+  background: var(--olive);
+  color: var(--cream);
+  border: none;
+  border-radius: 24px;
+  padding: 0.7em 1.6em;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(112, 130, 56, 0.10);
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover, .button:hover {
+  background: var(--terracotta);
+  color: var(--cream);
+}
+
+.card {
+  background: var(--beige-dark);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.coffee-corner {
+  background: linear-gradient(120deg, var(--coffee) 60%, var(--cream) 100%);
+  color: #fff;
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(176, 137, 104, 0.10);
+  font-size: 1.1rem;
+}
+
+.plant {
+  color: var(--plant);
+}
+
+input, textarea {
+  border: 1.5px solid var(--olive);
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: var(--cream);
+  color: var(--olive-dark);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--terracotta);
+}
+
+form {
+  max-width: 400px;
   margin: 0 auto;
 }

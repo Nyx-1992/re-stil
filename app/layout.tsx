@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header style={{ background: 'var(--beige)', borderBottom: '1px solid var(--olive)' }}>
           <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1rem 2rem' }}>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-              <Image src="/logo.png" alt="Re:Stil Logo" width={40} height={40} />
+              <img src="/logo.svg" alt="Re:Stil Logo" width={40} height={40} style={{ display: 'block' }} />
               <span style={{ fontWeight: 'bold', fontSize: '1.3rem', color: 'var(--olive)' }}>Re:Stil</span>
             </Link>
             <div style={{ display: 'flex', gap: '1.5rem' }}>
