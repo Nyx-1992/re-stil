@@ -1,0 +1,32 @@
+:root {
+  --beige: #f5f5dc;
+  --olive: #708238;
+  --terracotta: #e2725b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--beige);
+  color: var(--olive);
+}
+
+a {
+  color: var(--olive);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--terracotta);
+}
+
+header, footer {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
