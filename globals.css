@@ -8,6 +8,8 @@
   --terracotta: #e2725b;
   --cream: #fff9f3;
   --coffee: #b08968;
+  --coffee-dark: #7c5c3e;
+  --coffee-light: #d2bba0;
   --plant: #a3b18a;
   --shadow: 0 2px 8px rgba(112, 130, 56, 0.08);
 }
@@ -66,11 +68,25 @@ button:hover, .button:hover {
 }
 
 .card {
-  background: var(--beige-dark);
+  background: var(--coffee-light);
   border-radius: 18px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 16px rgba(124, 92, 62, 0.10), var(--shadow);
   padding: 1.5rem 1.2rem;
   margin-bottom: 1.5rem;
+  color: var(--olive-dark);
+  font-size: 1.13rem;
+}
+
+.textbox {
+  background: linear-gradient(120deg, var(--coffee) 80%, var(--beige-dark) 100%);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(176, 137, 104, 0.13);
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.13rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .coffee-corner {
